@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.php"><img src="../images/homepage/logo_mob.svg" class="logo-home-button" alt="Kronos logotipas"></a>
+            <ul class="menu-container">
+                <li onclick="myFunctionGalerija()" class="menu-btn dropdown-btn">Galerija
+                    <ul id="myDropdownGalerija" class="dropdown-menu">
+                        <li class="dropdown-content"><a href="/pages/vestuves.php">Vestuvės</a></li>
+                        <li class="dropdown-content"><a href="/pages/portretai.php">Portretai</a></li>
+                        <li class="dropdown-content"><a href="/pages/vaikai.php">Vaikai</a></li>
+                    </ul>
+                </li>
+                <li onclick="myFunctionInformacija()" class="menu-btn dropdown-btn">Informacija
+                    <ul id="myDropdownInformacija" class="dropdown-menu">
+                        <li class="dropdown-content"><a href="/pages/apie.php">Apie</a></li>
+                        <li class="dropdown-content"><a href="/pages/atsiliepimai.php">Atsiliepimai</a></li>
+                        <li class="dropdown-content"><a href="/pages/duk.php">D.U.K.</a></li>
+                    </ul>
+                </li>
+                <li class="menu-btn"><a href="/pages/tinklarastis.php">Tinklaraštis</a></li>
+                <li class="menu-btn"><a href="/pages/kontaktai.php">Kontaktai</a></li>
+            </ul>
+            <div class="nav-social-btns-container">
+                <span><a href="https://www.facebook.com/KronosPortraits/" target="_blank"><img src="../images/homepage/facebook.svg" alt="Facebook logo"></a></span>
+                <span><a href="#"><img src="../images/homepage/instagram.svg" alt="Instagram logo"></a></span>
+                <span><a href="mailto:info@kronos.lt"><img src="../images/homepage/mail.svg"></a></span>
+            </div>
+        </nav>
+    </header>
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunctionGalerija() {
+            document.getElementById("myDropdownGalerija").classList.toggle("show");
+        }
+        function myFunctionInformacija() {
+            document.getElementById("myDropdownInformacija").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-menu");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+</script>
+</body>
+</html>
