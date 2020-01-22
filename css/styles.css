@@ -1,0 +1,410 @@
+/* Global style */
+/* reseting values */
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "arial narrow", arial, sans-serif;
+    font-size: 20px;
+    color: #3c3b36;
+    background-color: #f7f3e8;
+}
+/* END of reseting */
+.navbar {
+    display: flex;
+    background-color: #b8c4c2;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.logo-home-button {
+    margin: 12px 0 0 10px;
+}
+.menu-container {
+    margin: 5px 0 0 0;
+    width: 100%;
+    align-items: center;
+}
+.menu-container, .dropdown-menu {
+    list-style: none;
+    padding: 0;
+}
+.menu-container a {
+    text-decoration: none;
+    color: #3c3b36;
+    display: block;
+}
+.dropdown-btn {
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    width: 100%;
+}
+.menu-btn {
+    padding: 4px 0;
+/*    min-width: 20%;*/
+    height: 22px;
+}
+.dropdown-content a {
+    display: block;
+    padding: 4px 0;
+    background-color: #b8c4c2;
+}
+.menu-btn:active, .dropdown-content a:active, .link-to-article:active {
+    background-color: #3c3b36;
+    color: #b8c4c2;
+}
+.nav-social-btns-container {
+    margin: 11px 10px 0 12px;
+    width: 32px;
+}
+.nav-social-btns-container img {
+    margin: 2px 0;
+}
+.show {
+    display: block;
+}
+h1 {
+    text-align: center;
+    margin: 145px 0 2px 0;
+}
+footer {
+    background-color: #b8c4c2;
+    text-align: center;
+    padding: 20px 0;
+}
+.gallery-photolink-container a, footer a, .duk-article a {
+    text-decoration: none;
+    color: #3c3b36;
+}
+/* END global style */
+
+/* Home page style */
+.gallery-photolink-container {
+    position: relative;
+}
+.gallery-photolink-container:active {
+    opacity: 0.8;
+}
+.gallery-photolink-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+h3.landing_page {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    color: #f7f3e8;
+    padding: 5px 0 0 10px;
+}
+/* END home page style */
+
+/* Tinklarastis style */
+.tinklarastis-articles-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    max-height: 330px;
+    border: 1px solid #3c3b36;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+h3.article-title {
+    background-color: #3c3b36;
+    margin: 0;
+    color: #f7f3e8;
+    padding: 5px 10px;
+}
+.inner-article-container {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+.article-image {
+    max-width: 300px;
+    max-height: 209px;
+}
+.article-intro {
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0;
+    padding: 2px 8px;
+}
+.link-to-article {
+    text-decoration: none;
+    color: inherit;
+}
+.link-to-article:action {
+    background-color: #f9a98e;
+}
+.blog-article-paragraph {
+    margin: 10px 1px 0 20px;
+}
+.article-li-image-container {
+    display: flex;
+    margin: 10px 10px 0 0;
+}
+.inside-article-image-right {
+    max-height: 500px;
+    float: right;
+}
+.article-image-container-width img {
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+article li {
+    margin: 0 10px 15px 0;
+}
+.article-h3-li-style {
+    list-style: none;
+}
+.article-h3-style {
+    margin: 0 0 5px 0;
+}
+/* END tinklarastis style */
+
+/* Gallery style */
+.wedding-gallery-image-container img, .portrait-gallery-image-container img, .children-gallery-image-container img {
+    width: 100%;
+}
+/* END gallery style */
+
+/* D.U.K. style */
+#virsus::before {
+    content: '';
+    display: block;
+    height: 150px;
+    margin-top: -150px;
+    visibility: hidden;
+}
+.duk-article {
+    margin: 0 15px;
+}
+.duk-article a {
+    text-decoration: none;
+}
+.duk-up-link-style {
+    text-decoration: none;
+    position: relative;
+    left: 80%;
+}
+/* END D.U.K. style */
+
+/* Atsiliepimai style */
+.testimonial-container {
+    background-color: #b7c4c1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 10px;
+    min-height: 140px;
+}
+.testimonial-container img {
+    float: left;
+    margin: 0 20px 0 0;
+    border-radius: 50%;
+    max-width: 140px;
+}
+.testimonial-container p {
+    margin: 5px 0 0 0;
+}
+/* END Atsiliepimai style */
+
+/* Apie style */
+.apie-main-container {
+    padding: 10px;
+}
+.apie-main-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+.apie-main-container p {
+    margin: 10px 0 0 0;
+}
+/* END Apie style */
+
+/* Kontaktai style */
+.kontaktai-main-style {
+    margin: 0 10px;
+}
+form {
+    margin: 0 0 55px 0;
+}
+input[type=text], input[type=tel], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3c3b36;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 20px;
+    font-family: "arial narrow", arial, sans-serif;
+}
+.col25 {
+    padding: 0 0 2px 5px;
+}
+form p {
+    margin: 5px 0 3px 0;
+}
+input[type=submit] {
+    background-color: #3c3b36;
+    color: #f7f3e8;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+/* END Kontaktai style */
+
+@media screen and (min-width: 600px) {
+    /* Global style */
+    main {
+        min-height: calc(100vh - 250px);
+    }
+    .navbar {
+        width: 70%;
+        left: 15%;
+    }
+    h1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        height: 58px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    /* END global style */
+
+    /* Home page style */
+    .gallery-photolink-container:hover {
+        opacity: 0.8;
+    }
+    .gallery-photolink-container img {
+        max-width: 98%;
+        display: block;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    h3.landing_page {
+        margin: 10px 0 5px 0;
+        position: static;
+        text-align: center;
+        color: #3c3b36;
+    }
+    /* END home page style */
+
+    /* Tinklarastis style */
+    .tinklarastis-articles-container, .article-container {
+        max-width: 70%;
+        margin: 10px auto;
+    }
+    .article-image-container-width img {
+        width: 30%;
+        float: left;
+        margin: 15px;
+    }
+    /* END tinklarastis style */
+
+    /* Gallery style */
+    .main-gallery-container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .wedding-gallery-image-container, .portrait-gallery-image-container, .children-gallery-image-container {
+        width: 23%;
+        margin: 0 auto;
+    }
+    .wedding-gallery-image-container img, .portrait-gallery-image-container img, .children-gallery-image-container img {
+        margin: 5px;
+    }
+    .wedding-gallery-image-container img:hover, .portrait-gallery-image-container img:hover, .children-gallery-image-container img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    /* END gallery style */
+
+    /* D.U.K. style */
+    .duk-article {
+        width: 70%;
+        margin: 0 auto;
+    }
+    /* END D.U.K. style */
+
+    /* Atsiliepimai style */
+    .testimonial-container {
+        width: 70%;
+        margin: 15px auto;
+    }
+    /* END Atsiliepimai style */
+
+    /* Apie style */
+    .apie-main-container {
+        width: 70%;
+        margin: 15px auto;
+    }
+    .apie-main-container img {
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    /* END Apie style */
+
+    /* Kontaktai style */
+    .kontaktai-main-style {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .col25 {
+        float: left;
+        width: 24%;
+    }
+    .col75 {
+        float: right;
+        width: 74%;
+    }
+    form p {
+        text-align: end;
+    }
+    .row:after, .apie-main-container:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* END Kontaktai style */
+}
+@media screen and (min-width: 800px) {
+     .menu-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-btn {
+        width: 100px;
+        padding: 4px 0;
+        font-size: 22px;
+    }
+    .menu-btn a, li.menu-btn {
+        width: 100px;
+    }
+    .menu-btn:hover, .dropdown-content a:hover, .menu-container a:hover, .link-to-article:hover, .duk-article a:hover {
+        background-color: #3c3b36;
+        color: #b8c4c2;
+    }
+    .main-gallery-links-container {
+        display: flex;
+        margin: 100px auto 0 auto;
+        width: 70%;
+}
